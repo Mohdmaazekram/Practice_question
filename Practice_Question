@@ -1,0 +1,15 @@
+#Python Questions
+
+1) Reverse Any String & Number
+Ans--> Name = "Maaz Shaikh"
+       Name[::-1]
+
+2) Find Count of any alphabet From String & Number
+Ans --> if "a" in Name:
+          replac = Name.replace("a","")
+          final_code = len(Name)-len(replac)
+          print(final_code)
+        else:
+          print("N/A")
+
+3) 
