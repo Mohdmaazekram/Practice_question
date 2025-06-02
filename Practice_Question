@@ -12,4 +12,24 @@ Ans --> if "a" in Name:
         else:
           print("N/A")
 
-3) 
+3) # Given a sentence or cluster of words,
+       # find out if there are any integers inside the string.
+       # Print out the total number of integers.
+       # If there’s at least 1 integer present,
+       # find the sum of all of the integers found and print out the sum.
+       
+       # For example:
+       # If
+       # string = “200 plus 500 is equal to”
+       # 2 integers found
+       # sum: 700
+
+Ans --> import re
+       string_l = "200 plus 500 is equal to 1,000"
+       
+       def my_function(fname):
+         string = string_l.replace(',','')
+         string = re.findall(r'\d+',str(string))
+         string = sum(map(int, string))
+         return string
+       my_function(string_l)
